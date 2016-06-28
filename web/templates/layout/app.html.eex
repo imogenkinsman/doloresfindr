@@ -14,16 +14,27 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav role="navigation">
+        <nav>
           <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+            <li>
+              <a class="nav-link">
+                WTF
+              </a>
+            </li>
+            <li>
+              <a class="nav-link">
+                ISTHIS
+              </a>
+            </li>
+            <li>
+              <a class="nav-link">
+                SHIT
+              </a>
+            </li>
           </ul>
+          <h3>Dolores Findr</h3>
         </nav>
-        <span class="logo"></span>
       </header>
-
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
